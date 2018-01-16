@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Hike Finder</title>
+    <link href="js/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="js/lib/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="sidebar">
+            <ul class="listOfHikes">
+                <li class="ListHeading">
+                    <p>Hike Here!</p>
+                </li>
+                <hr>
+                <p class="search"><input class="search-box" data-bind="textInput: searchBox, valueUpdate: 'afterkeydown'" placeholder="Filter by name"></p>
+                <ul data-bind="foreach: filter">
+                    <a href="#">
+                        <li data-bind="text: title, click: $parent.toggleBounce"></li>
+                    </a>
+                </ul>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/filter.png" alt="filter icon"></a>
+            </div>
+        </div>
+        <div class="mapContainer">
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/locations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBTHXt_aXhWfuxGBX4th8PXI1V7SK8Qsqs&callback=openHikingApp" onerror="errorLoadingMaps()" async defer></script>
+</body>
+</html>
