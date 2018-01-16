@@ -1,4 +1,5 @@
 # Udacity Neighborhood Map Project
+This project allows you to look at a few hiking areas in bay area on google maps along with some details and the ability to search by name. 
 
 ## To Run the Application:
 
