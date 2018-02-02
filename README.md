@@ -19,4 +19,5 @@ This project allows you to look at a few hiking areas in bay area on google maps
 * Google Maps API - https://developers.google.com/maps/
 * Foursquare API - https://developer.foursquare.com/
 
-##Link to the Website:  https://siddharthparmar.github.io/NeighborhoodMap/.
+## Link to the Website 
+https://siddharthparmar.github.io/NeighborhoodMap/.
